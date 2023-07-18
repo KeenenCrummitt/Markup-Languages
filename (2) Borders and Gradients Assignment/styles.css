@@ -41,16 +41,16 @@ hr.style-one {
   display: inline-block;
   font-size: 0.9em;
   transform: translateY(-8px);
-  color: #d8a878;
+  color: #e0b991;
 }
 
 .fifty {
-  color: #d8a878;
+  color: #e0b991;
 }
 
 .btn {
   border-radius: 5px;
-  background-color: #d8a878;
+  background-color: #e0b991;
   font-size: small;
   padding: 5px;
   border: 0;
