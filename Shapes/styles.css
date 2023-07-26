@@ -1,0 +1,58 @@
+/* Courtney Cook's CSS */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-image: url(images/pink-city.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img {
+  border: 2.5px solid white;
+  border-radius: 100px;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* for border around icons */
+.fa-inverse {
+  margin-left: 15px;
+  border: 1.5px solid white;
+  border-radius: 100%;
+  background-image: center;
+  padding: 4px;
+  justify-content: center;
+}
+/* for png facebook icon */
+.f-img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.fa-inverse-1 {
+  margin-left: 15px;
+  border: 1.5px solid white;
+  border-radius: 100%;
+  background-image: center;
+  padding: 4px;
+  transform: translateY(50px);
+  filter: invert(white);
+}
+
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  text-shadow: 2px 2px darkblue;
+}
