@@ -1,3 +1,44 @@
+body {
+  margin: 1rem 0;
+  background: #111;
+}
+
 .cmy {
-  background: url("268px-CMYK_separation_no_black.jpg");
+  background: url("images/268px-CMYK_separation_no_black.jpg") top left,
+    url("images/268px-CMYK_separation_no_black.jpg") center center,
+    url("images/268px-CMYK_separation_no_black.jpg") bottom right;
+  height: 200px;
+}
+
+.cmy:hover {
+  background-position: top center, center center, bottom center;
+}
+
+.cmyk {
+  background: url("images/201px-CMYK_separation_maximum_black.jpg") top left,
+    url("images/201px-CMYK_separation_maximum_black.jpg") 402px 303px,
+    url("images/201px-CMYK_separation_maximum_black.jpg") 201px -150px,
+    url("images/201px-CMYK_separation_maximum_black.jpg") bottom right;
+  background-size: 25% 400%;
+  height: 150px;
+}
+
+.cmyk:hover {
+  background-position: top center, center 303px, center -150px, bottom center;
+}
+
+.cmy,
+.cmyk {
+  margin: 0.25rem auto;
+  width: 804px;
+  background-blend-mode: multiply;
+  background-color: white;
+  background-repeat: repeat-y;
+  transition: 0.25s 0.5s;
+  border-radius: 0.25rem;
+}
+
+.cmy:hover,
+.cmyk:hover {
+  transition: 1.5s 0;
 }
