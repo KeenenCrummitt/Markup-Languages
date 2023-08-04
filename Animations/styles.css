@@ -1,0 +1,142 @@
+body {
+  margin: 50px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 400px;
+  grid-gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  border-radius: 5px;
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  color: #f3f6f6;
+  text-shadow: 0 0 8px darkblue;
+}
+
+.hide {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(19, 116, 117, 1) 0%,
+    rgba(253, 187, 45, 0) 100%
+  );
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  background-color: aqua;
+  border-radius: 5px;
+  color: white;
+  font-weight: 200;
+  font-size: medium;
+  text-shadow: 0 0 5px #171616;
+  border: none;
+}
+
+.wrapper > div:hover > .hide {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.wrapper > div:hover > span {
+  transform: translateY(-10dvh);
+  transition: all 0.4s ease;
+}
+
+.wrapper > div > span {
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.garden {
+  font-size: xx-large;
+  font-weight: 700;
+  position: relative;
+}
+
+.garden img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hydroponics {
+  font-size: xx-large;
+  font-weight: 700;
+  position: relative;
+}
+
+.hydroponics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.systems {
+  font-size: xx-large;
+  font-weight: 700;
+  position: relative;
+}
+
+.systems img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.supplies {
+  font-size: xx-large;
+  font-weight: 700;
+  position: relative;
+}
+
+.supplies img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
